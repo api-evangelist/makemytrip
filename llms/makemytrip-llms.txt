@@ -1,0 +1,160 @@
+# llm.txt for MakeMyTrip.com
+
+# Owner
+Owner: MakeMyTrip India Pvt. Ltd.
+Contact: support@makemytrip.com
+Website: https://www.makemytrip.com
+
+# MakeMyTrip Overview > MakeMyTrip is a leading online travel agency providing booking services for
+flights, hotels, trains, bus, cabs, visa,  holiday packages, forex and travel insurance
+
+## Key Features
+- **Flight Bookings**: Search and book domestic and international flights.
+- **Hotel Bookings**: Book hotels across various destinations worldwide.
+- **Holiday Packages**: Explore pre-designed holiday packages for popular destinations.
+- **Business Travel Solutions**: Introducing myBiz for corporate travel management.
+-**Trip Ideas**: Explore Places, Things to Do, know Best Time to Visit  before planing your trip.
+-**Train Bookings**: Search and book train tickets across India.
+-**Bus Bookings**: Book intercity bus tickets for various routes.
+-**Cab Services**: Book cabs for local and outstation travel.
+-**Homestays and Villas**: Alternative accommodation options for a homely experience.
+-**Visa Services**: Assistance with visa applications for international travel.
+-**Gift Cards**: Purchase travel gift cards for friends and family.
+-**Travel Insurance**: Add-on insurance options for trip protection.
+
+
+## Essential Pages
+- [Home Page] (https://www.makemytrip.com) - Main entry point for users.
+- [Flight Search](https://www.makemytrip.com/flights/) - Search and book flights.
+- [Hotel Search](https://www.makemytrip.com/hotels/) - Search and book hotels.
+- [Holiday Packages]( https://www.makemytrip.com/holidays-india/) - Explore holiday packages.
+-[Trains] (https://www.makemytrip.com/railways/) - Search and book trains.
+-[Buses] (https://www.makemytrip.com/bus-tickets/) - Search and book buses
+-[Car Rental] (https://www.makemytrip.com/car-rental/) - Search and rent cabs
+-[Tripideas] (https://www.makemytrip.com/tripideas/) - Discover Places & Plan Your Holidays!
+-[Visa Services] (https://www.makemytrip.com/visa/) - Search Visa related information
+-[Gift Cards] ( https://www.makemytrip.com/gift-cards/) - Get Travel Gift Cards
+-[Cabs] (https://www.makemytrip.com/cabs/ ) - Search and book Cabs
+-[Homestays and Villas] (https://www.makemytrip.com/homestays/ ) - Search and book homesteads and Villas
+- [myBiz](/mybiz) - (Business travel solutions.)
+
+
+## Resources
+- LFAQSJ (/faqs) - Frequently Asked Questions.
+- [Contact Us](/contact-us) - Get in touch with customer support.
+- [Terms and Conditions](/terms-and-conditions)
+
+# General Policy
+Allow: /flights/
+Allow: /international-flights/
+Allow: /hotels/
+Allow: /hotels-international/
+Allow: /bus-tickets/
+Allow: /holidays/
+Allow: /railways/
+Allow: /cabs/
+Allow: /car-rental/*
+Allow: /holidays-india/*
+Allow: /holidays-international/*
+Allow: /tripideas/*
+Allow: /tripmoney/*
+Allow: /forex/
+Allow: /travel-insurance/
+Allow: /routeplanner/
+Disallow: /user-profile/
+Disallow: /checkout/
+Disallow: /payment/
+Disallow: /mbus/rnw/busSeatBooking?*
+Disallow: /tripideas/places/*?pdtCtx=
+Disallow: /tripideas/*?pdtCtx=
+Disallow: /tripideas/attractions/*?pdt*
+Disallow: /railways/pnrsearch/?*
+Disallow: /travel-guides/travel-guides/
+Disallow: /activities/*
+Disallow: /*?CMP=*
+Disallow: /*mmthtl*
+Disallow: /*intid=*
+Disallow: /travel-guides/node/
+Disallow: /travel-guides/sites/
+Disallow: /holiday-packages/holiday-packages/
+Disallow: /holiday-packages/bestseller_holidays_ibt/
+Disallow: /holiday-packages/bestseller_holidays_obt/
+Disallow: /holiday-packages/*wkform.jsp
+Disallow: /holiday-packages/clubmed/
+Disallow: /holidays/*
+Disallow: /holidays/
+Disallow: /holidays-india/search*
+Disallow: /holidays-international/search*
+Disallow: /backbutton*
+Disallow: /website/
+Disallow: /us_home/
+Disallow: /itinerary/
+Disallow: /promotion/
+Disallow: /car-rental-1/
+Disallow: /*manzdonotbook*
+Disallow: /test*
+Disallow: /flights/get-fare-calendar-block.html
+Disallow: /blog/search/site/*
+Disallow: /mmthtl/*
+Disallow: /air/*
+Disallow: /pwa/*
+Disallow: /blog/en/*
+Disallow: /blog/hi/*
+Disallow: /promos/*
+Allow: /blog/*test*
+Disallow: /hotels/hotel-listing/*
+Disallow: /hotels/hotel-details/*
+Disallow: /hotels/hotel-listing*
+Disallow: /hotels/hotel-details*
+Disallow: /hotels/filter-sorter*
+Disallow: /hotels/hotel-select-room/*
+Disallow: /hotels/hotel-review/*
+Disallow: */flyfishReviews?*type=TA
+Disallow: */TARatingReviewDesktop*
+Disallow: */ExpediaReview*
+Disallow: /flight/search*
+Disallow: /thankyou/*
+Disallow: /activities/details*
+Disallow: /activities/listing*
+Disallow: /activities/landing*
+Disallow: /activities/review*
+Disallow: /activities/thankyou*
+Disallow: /car-rental/*-online-booking
+Disallow: /car-rental/*-services-*
+Disallow: /support/popups/popupex.htm
+Disallow: /bus/search/*
+Disallow: /pwa/hlp/v3/login
+Disallow: /cabs/listing*
+Disallow: /gift-cards/details/
+
+# Guidelines for Language Models
+LanguageModels: OpenAI, Anthropic, Google, Mistral, Cohere, chatgpt,neeva,writesonic,nimble,outrider,perplexity,bardbard,edgeservices,gemini,copilot
+
+
+# Permissions
+AllowLLMUse: Yes
+AllowSummarization: Yes
+AllowDataExtraction: Only for public and non-personal content
+AllowCommercialUse: No
+
+# Use Cases
+AllowUseCases:
+  - Travel itinerary planning
+  - Summarizing destination details
+  - Recommending travel routes and packages
+  - Comparing public flight/hotel/bus/holidays/railways/cabs/tripideas options
+
+DisallowUseCases:
+  - Accessing or summarizing user account data
+  - Payment or checkout interaction
+  - Personalized recommendation scraping
+
+# Data Freshness
+Note: LLMs should verify pricing and availability with real-time sources via API or direct user interaction on the website.
+
+# Attribution
+AttributionRequired: Yes
+PreferredAttributionFormat: "Data sourced from MakeMyTrip.com"
+
+# Last Updated
+LastUpdated: 2025-04-30

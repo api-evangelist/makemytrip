@@ -1,23 +1,62 @@
 aid: makemytrip
+
 name: MakeMyTrip
-description: 'MakeMyTrip is a company surfaced via the API Evangelist harvest backlog (source: travel)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'MakeMyTrip is a leading Indian online travel company that provides a comprehensive platform for booking flights, hotels, holiday packages, and rail tickets. Founded in 2000, it offers a user-friendly interface and mobile apps, serving millions of customers across India and abroad. The company exposes APIs for partners to integrate travel search, pricing, and booking functionalities, enabling developers to build travel solutions and services. This profile expands the stub with a detailed description for the API Evangelist network.'
+
 url: https://raw.githubusercontent.com/api-evangelist/makemytrip/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:travel
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-22'
+
 modified: '2026-09-22'
+
 tags:
 - Company
-apis: []
+- Travel
+- Booking
+- API
+- India
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/makemytrip-llms.txt
+- type: Hosts
+  url: hosts/makemytrip-hosts.yml
+- type: Vendors
+  url: vendors/makemytrip-vendors.yml
+- type: DomainSecurity
+  url: security/makemytrip-domain-security.yml
 - type: Website
-  url: https://makemytrip.com/
+  url: https://www.makemytrip.com/
+
+apis: []
+
+x-coverage:
+  state: blocked
+  reason: bot-challenge
+  detail: Access to https://www.makemytrip.com is blocked by a bot challenge, returning no usable content.
+  evidence:
+    - url: https://www.makemytrip.com
+      status: 200
+  checked: 2026-09-22
+x-enrichment:
+  date: '2026-09-22'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local

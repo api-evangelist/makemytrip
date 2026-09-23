@@ -1,0 +1,6 @@
+generated: '2026-09-22'
+method: probed
+generator: harvest-llms.py
+source: https://www.makemytrip.com/llms.txt
+bytes: 5914
+note: saved verbatim; the provider's own document
